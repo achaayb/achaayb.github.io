@@ -5,12 +5,13 @@ const main = document.querySelector('main')
 
 
 const toggleMenu = () => {
+  hamMenu.classList.toggle('fixed')
     if (hamMenu.classList.contains('open')){
-        setTimeout(()=>{
-            mobileNav.style.display = 'none'
-        },420)
-        hamMenu.classList.toggle('open')
-        mobileNav.classList.toggle('open')
+      setTimeout(()=>{
+        mobileNav.style.display = 'none'
+      },420)
+      hamMenu.classList.toggle('open')
+      mobileNav.classList.toggle('open')
     } else {
         mobileNav.style.display = 'flex'
         setTimeout(()=>{

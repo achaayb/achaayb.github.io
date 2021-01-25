@@ -24,7 +24,7 @@
     --main: #222;
     --main2: #333;
     --secondary: #eee;
-    --secondary2: #e6e6e6;
+    --secondary2: #dddddd;
 }
 body {
     width: 100%;
@@ -65,18 +65,23 @@ header {
         font-size: 1.4rem;
         padding: 0.1rem 0.5rem;
         border-radius: 3px;
-        box-shadow: 5px 10px 45px rgba(0, 0, 0, 0);
-        transition: background-color 400ms ease-in-out,
-                    box-shadow 400ms ease-in-out;
+        transition: background-color 400ms ease-in-out;
         &:hover {
-            box-shadow: 5px 10px 45px rgba(0, 0, 0, 0.1);
             background-color: var(--secondary2);
         }
     }   
     .menu {
         .ham-burger {
             position: relative;
-            z-index: 50;
+            &.fixed {
+                position: fixed;
+                top: 4.6vh;
+                right: 5vw;
+                @include mobile {
+                    right: 7vw;
+                }
+            }
+            z-index: 5;
             height: 23px;
             width: 30px;
             cursor: pointer;
@@ -150,6 +155,7 @@ header {
             }
             &.mobile {
                 position: fixed;
+                z-index: 4;
                 top: 0; left: 0; right: 0; bottom: 0;
                 align-items: center;
                 justify-content: center;
@@ -266,6 +272,84 @@ main {
             }
         }
     }
+    .btn {
+        color: #ffffff;
+        padding: 0.8rem;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+      }
+      .btn:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+      
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .cards_item {
+        display: flex;
+        padding: 1rem;
+      }
+      
+      @media (min-width: 40rem) {
+        .cards_item {
+          width: 50%;
+        }
+      }
+      
+      @media (min-width: 56rem) {
+        .cards_item {
+          width: 33.3333%;
+        }
+      }
+      .card_image {
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+          }
+      }
+      .card {
+        background-color: white;
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      
+      .card_content {
+        padding: 1rem;
+        background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+      }
+      
+      .card_title {
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 0px;
+      }
+      
+      .card_text {
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;    
+        font-weight: 400;
+      }
 }
 
 .hide-for-desktop {

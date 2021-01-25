@@ -27,7 +27,25 @@ const projectsContent = `
     <h1>This is projects</h1>
 `
 const servicesContent = `
-    <h1>This is services</h1>
+    <div class="content">
+        <ul class="services__wrapper">
+            ${
+                services.map(service => {
+                    return (`
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                            <div class="card_content">
+                                <h2 class="card_title">Card Grid Layout</h2>
+                                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                                <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>`)
+                })
+            }
+        </ul>
+    </div>
 `
 const platformsContent = `
     <h1>This is platforms</h1>
