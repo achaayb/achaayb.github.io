@@ -11,5 +11,5 @@
   - /index.html
   - /lib_js/*
 - index.html
-  - create a canvas element
+  - create a canvas element allowed styling : border: 1px solid black;
   - import main.js below the canvas
