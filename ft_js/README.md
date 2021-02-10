@@ -11,4 +11,4 @@
   - /index.html
   - /lib_js/*
 - index.html
-  - ![index_html](,/assets/index_html.png)
+  - ![index_html](./assets/index_html.png)
