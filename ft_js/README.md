@@ -11,4 +11,17 @@
   - /index.html
   - /lib_js/*
 - index.html
-  - ![index_html](./assets/index_html.png)
+  - ```html
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ft_js</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
+    ```
