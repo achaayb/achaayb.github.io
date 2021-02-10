@@ -2,7 +2,7 @@ const whoamiContent = `
     <div class="content">
         <div class="whoami__wrapper">
             <div class="whoami__image">
-                <img src="./lol.jpg" alt="lol" />
+                <img src="./index/lol.jpg" alt="lol" />
             </div>
             <div class="whoami__description">
                 <div class="whoami__description__actual">
