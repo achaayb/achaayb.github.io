@@ -20,6 +20,7 @@
     <title>ft_js</title>
 </head>
 <body>
+    <img onload="alert('sdfdsfsd')">
     <canvas id="canvas"></canvas>
     <script src="main.js"></script>
 </body>
