@@ -76,5 +76,16 @@ const platformsContent = `
     <h1>This is platforms</h1>
 `
 const hireMeContent = `
-    <h1>This is hire me</h1>
+<div class="content">
+<div class="abt">
+<p>
+  Contact me
+</p>
+  <h2>0640696946</h2><br>
+  <h2>alichaaybbusiness@gmail.com</h2>
+  <img src="https://thumbs.gfycat.com/InnocentCarefreeDouglasfirbarkbeetle-size_restricted.gif">
+</div>
+
+</div>
+
 `
