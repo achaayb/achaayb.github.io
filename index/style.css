@@ -398,18 +398,6 @@ main .visi .btn {
       padding-top: 66.6%;
     }
   }
-  main .visi .card__image--flowers {
-    background-image: url(https://unsplash.it/800/600?image=82);
-  }
-  main .visi .card__image--river {
-    background-image: url(https://unsplash.it/800/600?image=11);
-  }
-  main .visi .card__image--record {
-    background-image: url(https://unsplash.it/800/600?image=39);
-  }
-  main .visi .card__image--fence {
-    background-image: url(https://unsplash.it/800/600?image=59);
-  }
   main .visi .card__title {
     color: #696969;
     font-size: 1.25rem;

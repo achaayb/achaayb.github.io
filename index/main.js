@@ -26,7 +26,7 @@ let currentContent = 'whoami'
 const changeContent = (to) => {
     currentContent = to
     let newContent
-    let links = ['projects', 'services', 'platforms', 'hireMe']
+    let links = ['projects', 'hireMe']
     links.map(link => {
         if (to === link) {
             document.querySelector(`li.${link}-link`).classList.add('active')
@@ -41,14 +41,8 @@ const changeContent = (to) => {
         case 'projects':
           newContent = projectsContent
           break;
-        case 'services':
-          newContent = servicesContent
-          break;
-        case 'platforms':
-          newContent = platformsContent
-          break;
         case 'hireMe':
-          newContent = hireMeContent
+          newContent = contactContent
           break;
         default:
           newContent = `<h1>Whoops, an error occurred!</h1>`
