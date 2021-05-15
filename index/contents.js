@@ -54,7 +54,8 @@ const projectsContent = `
   <div class="card__image card__image--fence" style="background-image: url(https://github.com/0sssama/0sssama.github.io/blob/main/imgs/osadreamshop.png?raw=true)"></div>
   <div class="card__content">
     <div class="card__title">osadreamshop</div>
-    <p class="card__text">Made for couples and friends, find matching profile pictures with the click of a button!.      </p>
+    <p class="card__text">MERN Stack e-commerce website. fast and reliable !
+    </p>
     <button class="btn btn--block card__btn" onclick="window.location.assign('https://osadreamshop.herokuapp.com/')">osadreamshop</button>
   </div>
 </div>
